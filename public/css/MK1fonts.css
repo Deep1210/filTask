@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "ObjectiveMK1-Xbd";
+  src: url('../fonts/ObjektivMk1WXBd.ttf') format('truetype'),
+  url('../fonts/ObjektivMk1WXBd.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ObjectiveMK1-Rg";
+  src: url('../fonts/ObjektivMk1WRg.ttf') format('truetype'),
+  url('../fonts/ObjektivMk1WRg.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ObjectiveMK1-Md";
+  src: url('../fonts/ObjektivMk1WMd.ttf') format('truetype'),
+  url('../fonts/ObjektivMk1WMd.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ObjectiveMK2-Md";
+  src: url('../fonts/ObjektivMk2WMd.ttf') format('truetype'),
+  url('../fonts/ObjektivMk2WMd.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ObjectiveMK1-Th";
+  src: url('../fonts/ObjektivMk2WTh.ttf') format('truetype'),
+  url('../fonts/ObjektivMk2WTh.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ObjectiveMK2-Th";
+  src: url('../fonts/ObjektivMk2WTh.ttf') format('truetype'),
+  url('../fonts/ObjektivMk2WTh.woff') format('woff');
+}
+
