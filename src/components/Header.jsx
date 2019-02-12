@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-import HeaderJson from "../jsonfiles/HeaderJson";
+
 
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data : HeaderJson
+            data : this.props.data
         }
 
     }
@@ -39,10 +39,13 @@ class Header extends Component {
                     <li style={{paddingLeft:5,paddingRight:5}} className="active"><a href="#">{this.state.data.menu1}</a></li>
                     <li style={{paddingLeft:5,paddingRight:5}} >
                         <select style={{background:"transparent",border:'none'}}>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                            {this.state.data.option1.map((option, index)=>{
+                                return(
+                                <option key={index} value={option}>{option}</option>
+                                )
+                            })}
+
+
                         </select>
                     </li>
                     <li style={{paddingLeft:5,paddingRight:5}} >

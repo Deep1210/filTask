@@ -5,7 +5,7 @@ import Header from './components/Header';
 import UserHeader from './components/UserHeader'
 import Table from "./components/Table";
 import ListComponent from "./components/ListComponent";
-import Paper from "@material-ui/core/Paper";
+import HeaderJson from "./jsonfiles/HeaderJson";
 
 
 
@@ -13,7 +13,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            data:HeaderJson
         }
 
     }
@@ -39,8 +39,8 @@ class App extends Component {
 
                 <div className="black-mountain">
                     <MainHeader/>
-                    <Header/>
-                    <UserHeader/>
+                    <Header data={this.state.data}/>
+                    <UserHeader data={this.state.data.userJson}/>
 
                     <div className="container-fluid">
                         <div className="row">
