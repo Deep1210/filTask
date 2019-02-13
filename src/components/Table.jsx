@@ -5,7 +5,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import TableData from '../jsonfiles/TableData';
+
 
 
 const styles = theme => ({
@@ -23,9 +23,9 @@ class TableComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tableData:TableData.data,
-            value1:TableData.label1,
-            value2:TableData.label2
+            tableData:this.props.tableData.data,
+            value1:this.props.tableData.label1,
+            value2:this.props.tableData.label2
         }
 
     }

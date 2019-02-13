@@ -9,13 +9,8 @@ class MainHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logoName:"Fidelity Internationals",
-            text1:"hello",
-            text2:"print",
-            text3:"options",
-            logout:"Logout",
-            age:"Options",
-
+            data:this.props.data,
+            age:''
         }
 
     }
@@ -45,7 +40,7 @@ class MainHeader extends Component {
             <div  style={{height: 35 ,background:'#696969',overflowY:'hidden'}}>
 
                 <div style={{paddingTop:5,paddingLeft:12}}>
-                    <span style={{color:'white',fontSize:15}}>{this.state.logoName}</span>
+                    <span style={{color:'white',fontSize:15}}>{this.state.data.logoName}</span>
                 </div>
 
                 <div style={{float:'right'}}>
@@ -57,15 +52,16 @@ class MainHeader extends Component {
                         }}>
 
                             <div className="d-flex">
-                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.text1}</span>
-                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.text2}</span>
-                                <select style={{background:"transparent",marginTop:4,color:"white",border:'none'}}>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="saab">Saab</option>
-                                    <option value="opel">Opel</option>
-                                    <option value="audi">Audi</option>
+                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.data.text1}</span>
+                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.data.text2}</span>
+                                <select style={{background:"transparent",border:'none',color:"white"}}>
+                                    {this.state.data.option1.map((option, index)=>{
+                                        return(
+                                            <option key={index} value={option} onchange={(e)=>this.handleChange(e)} >{option}</option>
+                                        )
+                                    })}
                                 </select>
-                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.logout}</span>
+                                <span style={{color:'white',fontSize:15,padding:5}}>{this.state.data.logout}</span>
 
 
                             </div>

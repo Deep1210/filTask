@@ -29,26 +29,30 @@ class UserHeader extends Component {
 
         return (
 
-            <div className="container-fluid" style={{background:'white',overflowY:'hidden'}}>
+            <div className="container-fluid" style={{background:'#F5FCFF',overflowY:'hidden'}}>
 
-                <div style={{paddingTop:5}}>
-                    <span style={{color:'black',fontSize:15}}>{this.state.data.name}</span>
-                </div>
 
-                <div style={{float:'right'}}>
-                    <div
-                        style={{
-                            marginTop:"-8%",
-                            cursor: 'pointer'
-                        }}>
 
-                        <span style={{color:'black',fontSize:15}}>{this.state.data.button}</span>
-                        <a href="#" style={{marginLeft:10,fontSize:15}} onClick={()=>alert("You pressed button")}>{this.state.data.link} &#8594;</a>
+
+                    <div className='row'>
+                        <div className="navbar-header" style={{padding:15}}>
+                            <span style={{color:'black',fontSize:15}}>{this.state.data.name}</span>
+                        </div>
+                        <ul className="nav navbar-nav-right" style={{position:'absolute',paddingTop:'15px',paddingRight:15,right:0}}>
+                            <li style={{paddingLeft:5,paddingRight:5}} className="active">
+                                <span style={{color:'black',fontSize:15}}>{this.state.data.button}</span>
+                            </li>
+                            <li style={{paddingLeft:5,paddingRight:5}} >
+                                <a href="#" style={{marginLeft:10,fontSize:15}} onClick={()=>alert("You pressed button")}>{this.state.data.link} &#8594;</a>
+                            </li>
+
+                        </ul>
 
 
                     </div>
-                </div>
-                </div>
+                <hr/>
+
+            </div>
 
 
 

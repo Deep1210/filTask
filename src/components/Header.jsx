@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../logo.png';
 
 
 
@@ -32,7 +32,7 @@ class Header extends Component {
 
 
                 <div className='row'>
-                <div className="navbar-header">
+                <div className="navbar-header" style={{padding:10}}>
                     <img src={logo} style={{height:100}} />
                 </div>
                 <ul className="nav navbar-nav-right" style={{position:'absolute',paddingTop:'40px',paddingRight:15,right:0}}>
