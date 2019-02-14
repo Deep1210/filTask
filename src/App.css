@@ -8,4 +8,28 @@
 .black-mountain .col-md-4 {
 
 }
+.bg-dark-gray{
+  background-color: #414956;
+}
+.p-0{
+  padding: 0;
+}
+.p-10{
+  padding: 10px;
+}
+.first-header-font{
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.first-header-font:hover{
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.border-left{
+  border-left: 1px solid white;
+}
+.flex-inherit{
+  flex-direction: inherit !important;
+}
 

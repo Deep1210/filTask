@@ -47,6 +47,7 @@ class TableComponent extends Component {
         return (
 
             <div className="container-fluid" style={{background:'white',overflowY:'hidden'}}>
+                <div style={{height:"50vh",overflow:'auto'}}>
                 <Table className={styles.table}>
                     <TableHead>
                         <TableRow>
@@ -69,6 +70,7 @@ class TableComponent extends Component {
                     </TableBody>
 
                 </Table>
+                </div>
 
             </div>
 

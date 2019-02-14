@@ -31,9 +31,6 @@ class UserHeader extends Component {
 
             <div className="container-fluid" style={{background:'#F5FCFF',overflowY:'hidden'}}>
 
-
-
-
                     <div className='row'>
                         <div className="navbar-header" style={{padding:15}}>
                             <span style={{color:'black',fontSize:15}}>{this.state.data.name}</span>
@@ -48,9 +45,8 @@ class UserHeader extends Component {
 
                         </ul>
 
-
                     </div>
-                <hr/>
+                <hr style={{marginTop:"0%"}}/>
 
             </div>
 

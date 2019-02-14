@@ -72,7 +72,7 @@ class ListComponent extends Component {
                                 classes = {{label: "new-dashboards-label"}}/>
                         </Tabs>
 
-                        <div style={{height: "35vh",overflow:'auto'}}>
+                        <div style={{height: "50vh",overflow:'auto'}}>
                             <List>
                                 { this.state.listData.map((part, index) => {
                                     return (
@@ -81,7 +81,7 @@ class ListComponent extends Component {
                                                 <div className="container" >
 
 
-                                                    <div className = "row" style={{paddingLeft: 5, marginTop: 5}}>
+                                                    <div className = "row" style={{paddingLeft: 5, marginTop: 5,fontWeight:700}}>
                                                         <img src={icon}  style={{height:30,paddingRight:10}}/> {part.employee_name}
                                                     </div>
                                                     <div className="row" style={{marginLeft:35}}>
@@ -108,7 +108,7 @@ class ListComponent extends Component {
                     }
 
                 {this.state.type === "list" &&
-                    <Paper style={{marginTop:5,marginBottom:10}}>
+                    <Paper style={{marginTop:10,marginBottom:10}}>
                         <div style={{height: "38vh",overflow:'auto'}}>
                         <List>
                             { this.state.listData.map((part, index) => {

@@ -39,7 +39,7 @@ class PieChart extends Component {
 
         return (
 
-            <div className="container-fluid" style={{background:'white',overflowY:'hidden',marginTop:"5%"}}>
+            <div className="container-fluid" style={{background:'white',overflowY:'hidden',marginTop:"10%"}}>
                 <Chart height={"45vh"} data={Format.formatPieChart(this.state.data)}/>
             </div>
 

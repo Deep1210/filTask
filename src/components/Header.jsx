@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,10 +34,11 @@ class Header extends Component {
 
                 <div className='row'>
                 <div className="navbar-header" style={{padding:10}}>
-                    <img src={logo} style={{height:100}} />
+                    <img src={logo} style={{height:80}} />
                 </div>
                 <ul className="nav navbar-nav-right" style={{position:'absolute',paddingTop:'40px',paddingRight:15,right:0}}>
-                    <li style={{paddingLeft:5,paddingRight:5}} className="active"><a href="#">{this.state.data.menu1}</a></li>
+                    <li style={{paddingLeft:5,paddingRight:5}}>
+                        <Link to={`/`}>{this.state.data.menu1}</Link></li>
                     <li style={{paddingLeft:5,paddingRight:5}} >
                         <select style={{background:"transparent",border:'none'}}>
                             {this.state.data.option1.map((option, index)=>{
@@ -56,7 +58,9 @@ class Header extends Component {
                             <option value="audi">Audi</option>
                         </select>
                     </li>
-                    <li style={{paddingLeft:5,paddingRight:5}} ><a>{this.state.data.menu2}</a></li>
+                    <li style={{paddingLeft:5,paddingRight:5}} >
+                        <Link to={`/${this.state.data.menu2}`}>{this.state.data.menu2}</Link>
+                    </li>
                     <li style={{paddingLeft:5,paddingRight:5}} ><a>{this.state.data.menu3}</a></li>
                     <li style={{paddingLeft:5,paddingRight:5}} ><a>{this.state.data.menu4}</a></li>
                 </ul>
